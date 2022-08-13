@@ -25,7 +25,7 @@ function kebabFilename(string) {
     for (let i = 0; i < arr.length; i++) {
         arr[i] = arr[i].toLowerCase();
     }
-    return arr.join("-") + ".js";
+    return "touch "+ arr.join("-") + ".js ; code $_";
 }
 //Input: "Now you can browse privately"
 //Ouput: "now-you-can-browse-privately.js"
@@ -35,7 +35,7 @@ function snakeFilename(string) {
     for (let i = 0; i < arr.length; i++) {
         arr[i] = arr[i].toLowerCase();
     }
-    return arr.join("_") + ".js";
+    return "touch "+ arr.join("_") + ".js ; code $_";
 }
 //Input: "Now you can browse privately"
 //Ouput: "now_you_can_browse_privately.js"
