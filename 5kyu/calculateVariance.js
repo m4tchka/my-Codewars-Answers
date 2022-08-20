@@ -1,6 +1,6 @@
 "https://www.codewars.com/kata/5266fba01283974e720000fa/train/javascript"
 
-//Really felt like a 5.5 - shuold learn reduce though...
+// 6 at most tbh
 
 var variance = function (numbers) {
     let count = 0;
