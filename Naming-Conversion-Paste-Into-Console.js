@@ -9,14 +9,14 @@ function camelKebabFilename(string) {
 //Input: DNA to RNA Conversion
 //Output: dna-To-Rna-Conversion
 
-function camelFilename(string, kyu) {
+function camelFilename(string, kyu, languageFileExtension) {
     if (!kyu) {return "REMEMBER TO PUT IN THE KYU AS WELL"}
     arr = string.split(" ");
     arr[0] = arr[0].toLowerCase();
     for (let i = 1; i < arr.length; i++) {
         arr[i] = arr[i][0].toUpperCase() + arr[i].substring(1).toLowerCase();
     }
-    return ` cd c:/personal_projects/my-codewars-answers/${kyu}kyu ; touch ${arr.join("")}.js ; code $_ ; cd .. `;
+    return ` cd c:/personal_projects/my-codewars-answers/${kyu}kyu ; touch ${arr.join("")}.${languageFileExtension} ; code $_ ; cd .. `;
 };
 //Input: "Now you can browse privately"
 //Ouput: "nowYouCanBrowsePrivately.js"
